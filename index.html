@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nicomoji.css">
+  <title>Memory Game</title>
+  <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>メモリーゲーム</h1>
+    </header>
+
+    <section class="start-game-modal">
+      <div id="start-modal" class="modal">
+        <div class="modal-content">
+          <h2>ようこそ！！</h2>
+          <p>ゲームの難易度を選択してね~</p>
+          <div class="modal-content-options">
+            <button class="btn play-again-btn" id="easyGame">簡単！(2枚)</button>
+            <button class="btn play-again-btn" id="mediumGame">普通！(4枚)</button>
+            <button class="btn play-again-btn" id="hardGame">難しい！！A(8枚)</button>
+            <button class="btn play-again-btn" id="hardGame1">難しい！！B(8枚)</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal section-->
+
+    <section class="win-game-modal">
+      <section class="score-panel">
+        <div class="timer-container">⏱ <span class="timer">00:00</span></div>
+        <ul id="star-rating" class="star-rating">
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+          <li class="star"><i class="fa fa-star fa-lg"></i></li>
+        </ul>
+        <span>
+          <span class="moves-counter">0</span>
+          動いた
+        </span>
+        <button class="btn reset-btn">
+          <i class="fa fa-repeat"></i>
+        </button>
+      </section>
+
+      <div id="modal" class="modal win">
+        <div class="modal-content" id="win-modal-content">
+          <div id="modal-details">
+            <span class="close">&times;</span>
+            <h2>おめでとう！！！！</h2>
+            <p>合わせた補償もあるよ😲😲😲</p>
+            <img class="modal-img" src="img/thumb_up.jpg" alt="💖🥰大好き, まみ🥰💖" />
+            <button class="btn play-again-btn" id="play-again">
+              もう一回やってみる？ ㅋㅋ
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <ul class="deck"></ul>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
